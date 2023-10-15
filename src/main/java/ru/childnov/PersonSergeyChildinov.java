@@ -12,6 +12,10 @@ public class PersonSergeyChildinov implements Greeting{
 
     private String city = "Санкт-Петербург";
 
+    /***
+     * Возвращает экземпляр класса PersonSergeyChildinov
+     * @return
+     */
     public  static PersonSergeyChildinov getInstance() {
         if (instance == null) {
             instance = new PersonSergeyChildinov();
@@ -23,18 +27,34 @@ public class PersonSergeyChildinov implements Greeting{
 
     }
 
+    /***
+     * Возвращает хобби
+     * @return
+     */
     public String getBestHobby() {
         return bestHobby;
     }
 
+    /***
+     * Возвращает полное имя
+     * @return
+     */
     public String getFullName() {
         return lastName + " " + firstName + " "+ secondName;
     }
 
+    /***
+     * Возвращает город
+      * @return
+     */
     public String getCity() {
         return city;
     }
 
+    /***
+     * Возвращает возраст
+     * @return
+     */
     public int getAge() {
         Date currentTime = new Date();
         long msTimeDistance = currentTime.getTime() - dateBirth.getTime();
