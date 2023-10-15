@@ -60,8 +60,7 @@ public class PersonSergeyChildinov implements Greeting{
         long msTimeDistance = currentTime.getTime() - dateBirth.getTime();
         long msDays = 24 * 60 * 60 * 1000;
 
-        int age = (int) (msTimeDistance/msDays/365);
-        return age;
+        return (int) (msTimeDistance/msDays/365);
     }
 
     @Override
