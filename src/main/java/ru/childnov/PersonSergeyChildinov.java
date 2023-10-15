@@ -3,14 +3,14 @@ package ru.childnov;
 import java.util.Date;
 public class PersonSergeyChildinov implements Greeting{
     private static PersonSergeyChildinov instance;
-    private String lastName = "Чильдинов";
-    private String firstName = "Сергей";
-    private String secondName = "Михайлович";
-    private Date dateBirth = new Date(75, 8, 24);
+    private final String lastName = "Чильдинов";
+    private final String firstName = "Сергей";
+    private final String secondName = "Михайлович";
+    private final Date dateBirth = new Date(75, 8, 24);
 
-    private String bestHobby = "Чтение старинных книг";
+    private final String bestHobby = "Чтение старинных книг";
 
-    private String city = "Санкт-Петербург";
+    private final String city = "Санкт-Петербург";
 
     /***
      * Возвращает экземпляр класса PersonSergeyChildinov
