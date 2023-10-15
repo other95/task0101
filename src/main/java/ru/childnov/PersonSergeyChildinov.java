@@ -14,7 +14,7 @@ public class PersonSergeyChildinov implements Greeting{
 
     /***
      * Возвращает экземпляр класса PersonSergeyChildinov
-     * @return
+     * @return экземпляр класса PersonSergeyChildinov
      */
     public  static PersonSergeyChildinov getInstance() {
         if (instance == null) {
@@ -29,7 +29,7 @@ public class PersonSergeyChildinov implements Greeting{
 
     /***
      * Возвращает хобби
-     * @return
+     * @return хобби
      */
     public String getBestHobby() {
         return bestHobby;
@@ -37,7 +37,7 @@ public class PersonSergeyChildinov implements Greeting{
 
     /***
      * Возвращает полное имя
-     * @return
+     * @return полное имя
      */
     public String getFullName() {
         return lastName + " " + firstName + " "+ secondName;
@@ -45,15 +45,15 @@ public class PersonSergeyChildinov implements Greeting{
 
     /***
      * Возвращает город
-      * @return
+      * @return город
      */
     public String getCity() {
         return city;
     }
 
     /***
-     * Возвращает возраст
-     * @return
+     * Возвращает возраст в годах
+     * @return возраст
      */
     public int getAge() {
         Date currentTime = new Date();
