@@ -1,6 +1,11 @@
 package ru.childnov;
 
 import java.util.Date;
+
+/***
+ * Класс содержит карочку Чильдинов Сергей Михайлович
+ */
+
 public class PersonSergeyChildinov implements Greeting{
     private static PersonSergeyChildinov instance;
     private final String lastName = "Чильдинов";
@@ -11,6 +16,8 @@ public class PersonSergeyChildinov implements Greeting{
     private final String bestHobby = "Чтение старинных книг";
 
     private final String city = "Санкт-Петербург";
+
+    private final String experience = "SAP, ABAP";
 
     /***
      * Возвращает экземпляр класса PersonSergeyChildinov
@@ -25,6 +32,10 @@ public class PersonSergeyChildinov implements Greeting{
 
     private PersonSergeyChildinov() {
 
+    }
+
+    public String getExperience() {
+        return experience;
     }
 
     /***
@@ -68,6 +79,7 @@ public class PersonSergeyChildinov implements Greeting{
         return "Имя : "+ getFullName()+
                 "\n Город : "+ getCity() +
                 "\n Возраст (приблизительно) : " + getAge() +
+                "\n Опыт в прогаммировании : " + getExperience() +
                 "\n Хобби : " + getBestHobby();
     }
 }

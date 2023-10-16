@@ -34,5 +34,11 @@ class PersonSergeyChildinovTest {
         PersonSergeyChildinov sergey = PersonSergeyChildinov.getInstance();
         Assertions.assertTrue(sergey.getCity().equals("Санкт-Петербург"));
     }
+
+    @Test
+    void getExperience() {
+        PersonSergeyChildinov sergey = PersonSergeyChildinov.getInstance();
+        Assertions.assertTrue(sergey.getExperience().equals("SAP, ABAP"));
+    }
     
 }
